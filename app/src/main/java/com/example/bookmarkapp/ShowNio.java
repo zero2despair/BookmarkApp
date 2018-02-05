@@ -29,7 +29,7 @@ public class ShowNio extends Activity {
 
 
         LinearLayout layout=new LinearLayout(this);
-        layout.setOrientation(LinearLayout.VERTICAL);  //横にな
+        layout.setOrientation(LinearLayout.VERTICAL);
         setContentView(layout);
 
         ADBHelper helper=new ADBHelper(this);
@@ -38,7 +38,7 @@ public class ShowNio extends Activity {
         Cursor c=nio.query("site",new String[]{"name","url"},null,null, null, null, null);
 
         boolean mov =c.moveToFirst();
-        while (mov){
+        while (mov){                        /////ボタン追加してくよ
             i=i+1;
             button[i] = new CustomButton(this);
             button[i].setTag(String.valueOf(i));
@@ -60,6 +60,7 @@ public class ShowNio extends Activity {
 
 
             mov=c.moveToNext();
+
             //layout.addView(textView);
             layout.addView(button[i]);
         }
