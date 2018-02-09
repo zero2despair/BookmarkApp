@@ -41,7 +41,7 @@ public class MainActivity extends Activity {
 
         ContentValues insertValues = new ContentValues();                               ////最初に追加してあるのでここから
         insertValues.put("name", "グラブル");
-        insertValues.put("url", "http://game.granbluefantasy.jp/#mypage");
+        insertValues.put("url", "http://game.granbluefantasy.jp/#top");
         long id = nio.insert("site", "グラブル", insertValues);                     ////ここまでは正式に使う場合は削除
 
         Button registrationButton=(Button)findViewById(R.id.insert);   ////////登録ぼたんおしたとき！！！名前とurlをひろっちゃうよ
