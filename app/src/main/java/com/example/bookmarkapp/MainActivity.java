@@ -15,6 +15,8 @@ import android.widget.Toast;
 import android.app.Activity;
 
 /**
+ * 注意！！！！！！！
+ * 正式版として使う場合は42行目～45行目はコメントアウトすること！！！！
  * Created with IntelliJ IDEA.
  * User: 寛人
  * Date: 2018/01/??
@@ -23,8 +25,6 @@ import android.app.Activity;
  */
 
 public class MainActivity extends Activity {
-
-
 
 
     @Override
