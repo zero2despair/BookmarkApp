@@ -27,6 +27,7 @@ public class ADBHelper extends SQLiteOpenHelper{
         nio.execSQL(shite);
 
     }
+
     @Override
     public void onUpgrade(SQLiteDatabase nio,int i,int j ){
 
